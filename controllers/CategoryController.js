@@ -1,6 +1,7 @@
 const { Category, Product, Sequelize } = require('../models/index.js');
 const { Op } = Sequelize;
 
+
 const CategoryController = {
     createCategory(req, res) {
         Category.create(req.body)
