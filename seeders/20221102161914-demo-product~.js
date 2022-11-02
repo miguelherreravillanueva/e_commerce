@@ -9,7 +9,7 @@ module.exports = {
 
         price: 222,
 
-        description: "New asus mouse",
+        description: "New Asus mouse",
         
         CategoryId: 2,
 
@@ -22,7 +22,7 @@ module.exports = {
 
         price: 222,
 
-        description: "New asus mouse",
+        description: "New Apple smartphone",
 
         CategoryId : 5,
 
@@ -35,7 +35,7 @@ module.exports = {
 
         price: 345,
 
-        description: "New keyboard form Logitech",
+        description: "New keyboard from Logitech",
         
         CategoryId: 1,
 
@@ -48,7 +48,7 @@ module.exports = {
 
         price: 999,
 
-        description: "New apple phone",
+        description: "New Apple tablet",
 
         CategoryId : 4,
 
