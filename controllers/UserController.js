@@ -2,7 +2,7 @@ const { User, Token} = require("../models/index");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { jwt_secret } = require("../config/config.json")["development"];
-// const { Op } = Sequelize;
+const { Op } = Sequelize;
 
 const UserController = {
     createUser(req, res) {
@@ -35,6 +35,35 @@ const UserController = {
           res.send({ message: "Wellcome " + user.name, user, token });
         });
       },
+
+      async getUsers(req, res) {
+        try {
+            const users = await User.findAll({ include: [Order] });
+            res.send(users);
+          } catch (error) {
+            console.error(err);
+            res.status(500).send(err);
+          }
+        },
+
+        async logoutUser(req, res) {
+            try {
+              await Token.destroy({
+                where: {
+                  [Op.and]: [
+                    { UserId: req.user.id },
+                    { token: req.headers.authorization },
+                  ],
+                },
+              });
+              res.send({ message: "Successfully disconnected" });
+            } catch (error) {
+              console.log(error);
+              res
+                .status(500)
+                .send({ message: "Error while connecting" });
+            }
+          },
 }
 
 module.exports = UserController;
