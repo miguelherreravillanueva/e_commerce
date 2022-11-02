@@ -11,20 +11,20 @@ module.exports = {
 
         description: "New asus mouse",
         
-        CategoryId: 1,
+        CategoryId: 2,
 
         createdAt: new Date(),
 
         updatedAt: new Date(),
       },
       {
-        name: "Iphone 3",
+        name: "iPhone 12",
 
         price: 222,
 
         description: "New asus mouse",
 
-        CategoryId : 1,
+        CategoryId : 5,
 
         createdAt: new Date(),
 
@@ -44,13 +44,13 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        name: "Iphone",
+        name: "iPad 7",
 
         price: 999,
 
         description: "New apple phone",
 
-        CategoryId : 1,
+        CategoryId : 4,
 
         createdAt: new Date(),
 
@@ -63,7 +63,7 @@ module.exports = {
 
         description: "New Pc",
         
-        CategoryId : 1,
+        CategoryId : 3,
 
         createdAt: new Date(),
 
