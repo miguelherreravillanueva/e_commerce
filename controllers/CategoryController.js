@@ -47,16 +47,32 @@ const CategoryController = {
         }
     },
 
-//     async delete(req, res) {
-//         await Category.destroy({
-//             where: {
-//                 id: req.params.id
-//             }
-//         })
-//         res.send(
-//             'Category successfully removed'
-//         )
-//     },
+    async updateCategoryById(req, res) {
+        try {
+          await Category.update({name:req.body.name}, {
+            where: {
+              id: req.params.id,
+            },
+          });
+          res.send({ msg: "Category successfully updated" });
+        } catch (error) {
+          console.error(err);
+          res
+            .status(500)
+            .send({ msg: "Error while updating category", err });
+        }
+      },
+
+    async deleteCategoryById(req, res) {
+        await Category.destroy({
+            where: {
+                id: req.params.id
+            }
+        })
+        res.send(
+            'Category successfully removed'
+        )
+    },
 }
 
 

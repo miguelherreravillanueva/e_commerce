@@ -6,7 +6,7 @@ router.post('/createCategory',CategoryController.createCategory)
 router.get("/getCategories",CategoryController.getCategories)
 router.get("/getCategoryById/:id",CategoryController.getCategoryById)
 router.get("/getCategoryByName/:name", CategoryController.getCategoryByName)
-// router.put("/updateCategory", CategoryController) //FALTA ESTA
-// router.delete("/deleteCategoryById/:id", CategoryController,delete)
+router.put("/updateCategoryById/:id", CategoryController.updateCategoryById)
+router.delete("/deleteCategoryById/:id", CategoryController.deleteCategoryById)
 
 module.exports = router;
