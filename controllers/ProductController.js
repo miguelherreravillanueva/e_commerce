@@ -29,6 +29,10 @@ const ProductController = {
     });
     res.send("Product has been deleted successfully");
   },
+  async getProductById(req, res) {
+    Product.findByPk(req.params.id)
+    .then((post) => res.send(post));
+  },
 };
 
 module.exports = ProductController;
