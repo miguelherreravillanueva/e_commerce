@@ -10,7 +10,7 @@ const ProductController = {
       )
       .catch((err) => console.error(err));
   },
-  async updateProduct(req, res) {
+  async updateProductById(req, res) {
     await Product.update(
       { ...req.body },
       {
@@ -20,6 +20,14 @@ const ProductController = {
       }
     );
     res.send("Product updated successfully");
+  },
+  async deleteProductById(req, res) {
+    await Product.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.send("Product has been deleted successfully");
   },
 };
 
