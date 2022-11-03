@@ -12,6 +12,7 @@ router.delete('/deleteProductById/:id', ProductController.deleteProductById)
 router.get('/getProductById/:id', ProductController.getProductById)
 router.get('/getProductByName/:name', ProductController.getProductByName)
 router.get('/getProductByPrice/:price', ProductController.getProductByPrice)
-router.get('/getProductByPriceDesc', ProductController.getProductByPriceDesc)
+router.get('/getProductsWithCategories', ProductController.getProductsWithCategories)
+router.get("/getProductsSortered", ProductController.getProductsSortered )
 
 module.exports = router;

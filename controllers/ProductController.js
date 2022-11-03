@@ -1,4 +1,5 @@
-const { Product, Sequelize } = require("../models/index");
+const { Product, Category, Sequelize } = require("../models/index");
+const product = require("../models/product");
 const { Op } = Sequelize;
 
 const ProductController = {
@@ -67,22 +68,25 @@ const ProductController = {
         .send({ msg: "Error searching product by price", err });
     }
   },
-  // async getProductByPriceDesc(req, res) {
-  //   try {
-  //     const product = await Product.findAll({
-  //       where: {
-  //         price: prices
-  //         order: ["price", "DESC"]
-  //       },
-  //     });
-  //     res.send(product);
-  //   } catch (error) {
-  //     console.error(err);
-  //     res
-  //       .status(see)
-  //       .send({ msg: "Error searching product by price ordenated", err });
-  //   }
-  // },
-};
+  
+getProductsWithCategories(req, res) {
+  Product.findAll({ include: [Category] })
+      .then((products) => res.send(products))
+      .catch((err) => {
+          console.error(err);
+          res.send(err);
+      });
 
-module.exports = ProductController;
+},
+getProductsSortered(req, res) {
+  Product.findAll({ order: [["price", "DESC"]] })
+      .then((products) => res.send(products))
+      .catch((err) => {
+          console.error(err);
+          res.send(err);
+      });
+    }, 
+  };
+
+  
+  module.exports = ProductController;
