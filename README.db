@@ -2,7 +2,6 @@
 
 El siguiente proyecto colaborativo consiste en la creación de una tienda online (e-commerce) en la que se combinan los conocimientos adquiridos en las tecnologías Node y Express, además de MySQl y Sequelize.
 
-
 ## Descripción y desarrollo del proyecto 🔧
 
 Para este proyecto hemos realizado un diagrama creando diferentes tablas y la relación entre ellas (1:1, 1:N, N:M).
@@ -16,7 +15,7 @@ Tamién, se ha tenido que desarrollar una API REST capaz de los siguientes punto
 Para trabajar de manera colaborativa, uno de los requisitos imprescindibles del proyecto ha sido el uso de ramas con git (personal, develop y main).
 
 
-### Tecnologías utilizadas 💻
+## Tecnologías utilizadas 💻
 
 Para este proyecto hemos utilizado las tecnologías Node, Express, MySQL y Sequelize, y la plataforma API Postman.
 
