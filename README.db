@@ -6,6 +6,7 @@ El siguiente proyecto colaborativo consiste en la creación de una tienda online
 
 Para este proyecto hemos realizado un diagrama creando diferentes tablas y la relación entre ellas (1:1, 1:N, N:M).
 Tamién, se ha tenido que desarrollar una API REST capaz de los siguientes puntos:
+
 - Registro de usuarios usando Bcrypt.
 - Login de usuarios + token + middleware.
 - Crear un CRUD.
