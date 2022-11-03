@@ -33,6 +33,11 @@ Para este proyecto hemos utilizado las tecnologías Node, Express, MySQL y Seque
 ![foto](assets/SQLimage.png)
 
 
+- Vista general del diagrama de SQL
+
+![foto](assets/Diagrama.png)
+
+
 ----
 
 Hecho por [Sif Et Tabaa](https://github.com/Sif03) y [Miguel Herrera](https://github.com/miguelherreravillanueva)
