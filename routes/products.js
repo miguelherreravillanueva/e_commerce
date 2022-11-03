@@ -14,5 +14,7 @@ router.get('/getProductByName/:name', ProductController.getProductByName)
 router.get('/getProductByPrice/:price', ProductController.getProductByPrice)
 router.get('/getProductsWithCategories', ProductController.getProductsWithCategories)
 router.get("/getProductsSortered", ProductController.getProductsSortered )
+router.post('/createProductOrder', ProductController.createProductOrder)
+
 
 module.exports = router;

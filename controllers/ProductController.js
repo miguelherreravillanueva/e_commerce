@@ -46,9 +46,7 @@ const ProductController = {
       res.send(product);
     } catch (error) {
       console.error(err);
-      res
-        .status(see)
-        .send({ msg: "Error searching product by name", err });
+      res.status(see).send({ msg: "Error searching product by name", err });
     }
   },
   async getProductByPrice(req, res) {
@@ -63,30 +61,34 @@ const ProductController = {
       res.send(product);
     } catch (error) {
       console.error(err);
-      res
-        .status(see)
-        .send({ msg: "Error searching product by price", err });
+      res.status(see).send({ msg: "Error searching product by price", err });
     }
   },
-  
-getProductsWithCategories(req, res) {
-  Product.findAll({ include: [Category] })
+
+  getProductsWithCategories(req, res) {
+    Product.findAll({ include: [Category] })
       .then((products) => res.send(products))
       .catch((err) => {
-          console.error(err);
-          res.send(err);
+        console.error(err);
+        res.send(err);
       });
-
-},
-getProductsSortered(req, res) {
-  Product.findAll({ order: [["price", "DESC"]] })
+  },
+  getProductsSortered(req, res) {
+    Product.findAll({ order: [["price", "DESC"]] })
       .then((products) => res.send(products))
       .catch((err) => {
-          console.error(err);
-          res.send(err);
+        console.error(err);
+        res.send(err);
       });
-    }, 
-  };
+  },
+  createProductOrder(req, res) {
+    Product.create(req.body)
+      .then((products) => {
+        products.addOrder(req.body.OrderId);
+        res.send(products);
+      })
+      .catch((err) => console.error(err));
+  },
+};
 
-  
-  module.exports = ProductController;
+module.exports = ProductController;
