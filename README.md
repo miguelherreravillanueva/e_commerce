@@ -1,39 +1,39 @@
-# Proyecto Backend 1º 🤝
+# Backend Project 1st 🤝
 
-El siguiente proyecto colaborativo consiste en la creación de una tienda online (e-commerce) en la que se combinan los conocimientos adquiridos en las tecnologías Node y Express, además de MySQl y Sequelize.
+The following collaborative project consists of the creation of an online store (e-commerce) in which the knowledge acquired in Node and Express technologies is combined, in addition to MySQl and Sequelize.
 
-## Descripción y desarrollo del proyecto 🔧
+## Description and development of the project 🔧
 
-Para este proyecto hemos realizado un diagrama creando diferentes tablas y la relación entre ellas (1:1, 1:N, N:M).
-Tamién, se ha tenido que desarrollar una API REST capaz de los siguientes puntos:
+For this project we have made a diagram creating different tables and the relationship between them (1:1, 1:N, N:M).
+Also, it has been needed to develop a REST API capable of the following points:
 
-- Registro de usuarios usando Bcrypt.
-- Login de usuarios + token + middleware.
-- Crear un CRUD.
-- Al menos una relación Many to Many y otra One to Many.
-- Utilización de seeders.
+- User registration using Bcrypt.
+- User login + token + middleware.
+- Create a CRUD.
+- At least one Many to Many relationship and another One to Many.
+- Use of seeders.
 
-Para trabajar de manera colaborativa, uno de los requisitos imprescindibles del proyecto ha sido el uso de ramas con git (personal, develop y main).
+To work collaboratively, one of the essential requirements of the project has been the use of branches with git (personal, develop and main).
 
 
-## Tecnologías utilizadas 💻
+## Technologies used 💻
 
-Para este proyecto hemos utilizado las tecnologías Node, Express, MySQL y Sequelize, y la plataforma API Postman.
+For this project we have used Node, Express, MySQL and Sequelize technologies, and the Postman API platform.
 
 
 ### Preview 
 
-- Vista general de Postman
+- Postman general overview
 
 ![foto](xxxxx.gif)
 
 
-- Vista general de MySQL
+- MySQL general overview
 
 ![foto](assets/SQLimage.png)
 
 
-- Vista general del diagrama de SQL
+- SQL diagram general overview
 
 ![foto](assets/Diagrama.png)
 
