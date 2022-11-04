@@ -1,4 +1,4 @@
-# Backend Project 1st 🤝
+# Backend 1st Project 🤝
 
 The following collaborative project consists of the creation of an online store (e-commerce) in which the knowledge acquired in Node and Express technologies is combined, in addition to MySQl and Sequelize.
 
