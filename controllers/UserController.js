@@ -1,4 +1,4 @@
-const { User, Order,Product,Token, Sequelize} = require("../models/index");
+const { User, Order,Product,Token,Sequelize} = require("../models/index");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { jwt_secret } = require("../config/config.json")["development"];
@@ -40,7 +40,7 @@ const UserController = {
 
       async getUsers(req, res) {
         try {
-            const users = await User.findAll({ include: [Order] });
+            const users = await User.findAll({ include:[{model: Order, include: [Product]}]});
             console.log(users)
             res.send(users);
           } catch (error) {
