@@ -40,7 +40,8 @@ const UserController = {
 
       async getUsers(req, res) {
         try {
-            const users = await User.findAll();
+            const users = await User.findAll({ include: [Order] });
+            console.log(users)
             res.send(users);
           } catch (error) {
             console.error(err);
