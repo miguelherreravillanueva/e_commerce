@@ -3,7 +3,7 @@ const product = require("../models/product");
 const { Op } = Sequelize;
 
 const ProductController = {
-  createProduct(req, res) {
+  createProduct(req, res,next) {
     Product.create(req.body)
       .then((product) =>
         res
@@ -12,7 +12,7 @@ const ProductController = {
       )
       .catch((err) => {
         console.error(err)
-        res.status(500).send(err)
+        next(err)
       });
   },
   async updateProductById(req, res) {

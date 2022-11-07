@@ -24,8 +24,9 @@ For this project we have used Node, Express, MySQL and Sequelize technologies, a
 ### Preview 
 
 - Postman general overview
+    User create endpoint.
 
-![foto](xxxxx.gif)
+![foto](assets/EndPointValidation.gif)
 
 
 - MySQL general overview
