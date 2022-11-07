@@ -10,7 +10,10 @@ const ProductController = {
           .status(201)
           .send({ message: "Product created successfully", product })
       )
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        console.error(err)
+        res.status(500).send(err)
+      });
   },
   async updateProductById(req, res) {
     await Product.update(
