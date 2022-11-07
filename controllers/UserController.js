@@ -5,7 +5,7 @@ const { jwt_secret } = require("../config/config.json")["development"];
 const { Op } = Sequelize;
 
 const UserController = {
-  async createUsercreate(req, res, next) {
+  async createUser(req, res, next) {
     try {
       req.body.role = "user";
       const password = await bcrypt.hash(req.body.password, 10);
