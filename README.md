@@ -1,6 +1,6 @@
 # Backend 1st Project 🤝
 
-The following collaborative project consists of the creation of an online store (e-commerce) in which the knowledge acquired in Node and Express technologies is combined, in addition to MySQl and Sequelize.
+The following collaborative project consists on the creation of an online store (e-commerce) in which the knowledge acquired in Node and Express technologies is combined, in addition to MySQl and Sequelize.
 
 ## Description and development of the project 🔧
 
@@ -9,11 +9,11 @@ Also, it has been needed to develop a REST API capable of the following points:
 
 - User registration using Bcrypt.
 - User login + token + middleware.
-- Create a CRUD.
+- Creation of a CRUD.
 - At least one Many to Many relationship and another One to Many.
 - Use of seeders.
 
-To work collaboratively, one of the essential requirements of the project has been the use of branches with git (personal, develop and main).
+To work collaboratively, one of the essential requirements of the project has been the use of branches on Git (personal, develop and main).
 
 
 ## Technologies used 💻
